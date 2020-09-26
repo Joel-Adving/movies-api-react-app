@@ -51,7 +51,10 @@ function App() {
               <span>Tv Series</span>
             </div>
           </div>
-          <h1 className="logo">Movie Database</h1>
+          <div className="logo-container">
+            <i class="fas fa-video"></i>
+            <h1 className="logo"> Movies</h1>
+          </div>
           <form onSubmit={handleOnSubmit}>
             <input
               className="search"

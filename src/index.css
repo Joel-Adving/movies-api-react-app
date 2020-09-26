@@ -58,9 +58,16 @@ header {
   font-size: 1.3rem;
 }
 
-.logo {
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  left: 16px;
+  left: 0.25rem;
+}
+
+.logo {
+  margin-left: 0.3rem;
   display: flex;
   font-size: 1rem;
 }
@@ -72,7 +79,7 @@ header {
   margin: 0.8rem;
   font-family: inherit;
   font-size: 0.8rem;
-  width: 120px;
+  width: 100px;
 }
 
 .search:focus {
@@ -156,4 +163,14 @@ header {
 
 .tag.red {
   color: red;
+}
+
+@media (max-width: 900px) {
+  .logo-container {
+    left: -0.25rem;
+  }
+
+  .search {
+    width: 90px;
+  }
 }
