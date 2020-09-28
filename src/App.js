@@ -37,24 +37,29 @@ function App() {
     setSearchTerm(e.target.value);
   };
 
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
   return (
     <>
       <header>
         <div className="navbar-container">
-          <div className="left-header">
-            <div className="movie-icon icon-container">
+          {/* <div className="left-header">
+             <div className="movie-icon icon-container">
               <i class="fas fa-film icons"></i>
               <p>Movies</p>
-            </div>
-            <div className="series-icon icon-container">
+            </div> 
+             <div className="series-icon icon-container">
               <i class="fas fa-tv icons"></i>
               <span>Tv Series</span>
-            </div>
-          </div>
-          <div className="logo-container">
-            <i class="fas fa-video"></i>
+            </div> 
+          </div> */}
+          <button className="logo-container" onClick={refreshPage}>
+            {/* <i class="fas fa-video"></i> */}
+            <i class="fas fa-film icons"></i>
             <h1 className="logo"> Movies</h1>
-          </div>
+          </button>
           <form onSubmit={handleOnSubmit}>
             <input
               className="search"
